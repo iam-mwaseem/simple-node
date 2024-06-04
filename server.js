@@ -4,7 +4,9 @@ const mongoose = require("mongoose");
 const app = express();
 
 app.use("/", (req, res) => {
-  res.send("<h1>Hi!! from your simple node server</h1>");
+  res.send(
+    "<h1>Hi!! from your simple node server with github actions in play</h1>"
+  );
 });
 
 mongoose.connect(process.env.DATABASE_URI).then(() => {
